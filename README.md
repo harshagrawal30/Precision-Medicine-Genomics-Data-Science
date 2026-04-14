@@ -8,7 +8,7 @@ How it Informs Personalized Medicine and Clinical Decision-Making:
 Below are the summary of key steps along with snapshots of the input dataset and the output results and charts.
 
 1. Input Training Dataset Loading - 
-   * We loaded the 'Gene Expression Analysis and Disease Relationship.csv' dataset.
+   * We loaded the 'Gene Expression Analysis and Disease Relationship.csv' dataset sourced from Kaggle (https://www.kaggle.com/datasets/ylmzasel/gene-expression-analysis-and-disease-relationship/data).
    * Gene expression features (X) were separated from the TreatmentResponse target variable (y).
    * The features were StandardScaler-normalized to ensure proper scaling for PCA.
 
