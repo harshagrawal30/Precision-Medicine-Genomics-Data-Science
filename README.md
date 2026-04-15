@@ -38,21 +38,8 @@ Accuracy result of the model post training with 80% of dataset and testing with 
 
 To test the model in local machine, follow below steps - 
 
-1. Clone the repository and ensure your directory structure matches the following:
+1. Clone the repository and ensure your directory structure matches the provided repo structure.
 
-.
-├── 📂 app                 # Production Layer: FastAPI service
-│   └── 📜 main.py         # Prediction logic & Clinical mapping
-├── 📂 data                # Data Layer: Raw & Processed assets
-│   └── 📊 genomic_data.csv # Source Dataset
-├── 📂 notebooks           # Research Layer: Training & EDA
-│   └── ⚙️ train_model.py   # E2E Pipeline (Scaling -> PCA -> XGBoost)
-├── 📂 models              # Artifact Layer: Serialized ML files
-│   ├── 🧊 scaler.pkl      # Feature normalization state
-│   ├── 🧊 pca.pkl         # Dimensionality reduction state
-│   └── 🧠 xgboost.pkl     # Trained inference engine
-├── 📜 requirements.txt    # Dependency Manifest
-└── 📜 README.md           # Documentation & Impact Story
 2. Environment Setup
 Create a virtual environment to manage dependencies and avoid system conflicts:
 
