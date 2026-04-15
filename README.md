@@ -38,7 +38,9 @@ Accuracy result of the model post training with 80% of dataset and testing with 
 
 To test the model in local machine, follow below steps - 
 
+
 1. Clone the repository and ensure your directory structure matches the provided repo structure.
+
 
 2. Environment Setup
 Create a virtual environment to manage dependencies and avoid system conflicts:
@@ -51,17 +53,21 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 # Install required libraries
 pip install -r requirements.txt
+
+
 3. Train the Model (Generate Artifacts)
 Before running the API, you must train the model locally to generate the .pkl files (Scaler, PCA, and XGBoost).
 
 python3 notebooks/train_model.py
 Wait for the message: Training Complete. Models saved to /models directory.
 
+
 4. Launch the FastAPI Server
 Now, start the Uvicorn server to host the local API:
 
 uvicorn app.main:app --reload
 The API will be live at: http://127.0.0.1:8000
+
 
 5. Testing the API
 You can test the model using the interactive Swagger UI:
